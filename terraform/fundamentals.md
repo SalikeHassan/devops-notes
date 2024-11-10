@@ -47,21 +47,34 @@ Terraform checks the current state against your desired configuration. If no cha
 
 ---
 
-# Push vs. Pull Models in IaC
+# Push vs. Pull Models in Infrastructure Management
 
 ## 1. Push Model (used by Terraform)
 
-- **Definition**: Central control point directly applies configurations.
-- **Use Case**: Best for centralized environments.
-- **Pros**: Central control, easy with CI/CD.
-- **Cons**: Needs direct access, less scalable for dynamic systems.
+- **Definition**: 
+  - A central control system (like your laptop or CI/CD pipeline) **pushes configurations** directly to the infrastructure.
+- **Example**: 
+  - You run a **Terraform command** to deploy resources, and it directly applies changes to your cloud.
+- **Use Case**: 
+  - Ideal for **centralized control** over infrastructure.
+- **Pros**: 
+  - Easy to manage, great for simpler setups.
+- **Cons**: 
+  - Needs direct access to the infrastructure, less suitable for highly dynamic or auto-scaling environments.
 
 ## 2. Pull Model
 
-- **Definition**: Agents on target environments pull updates from a central source.
-- **Use Case**: Ideal for auto-scaling, distributed environments.
-- **Pros**: Scales well, ensures continuous compliance.
-- **Cons**: Requires agents, complex to set up.
+- **Definition**: 
+  - Agents on target systems periodically **pull configurations** from a central source and apply updates.
+- **Example**: 
+  - Servers fetch configurations automatically from a central repository whenever changes are detected.
+- **Use Case**: 
+  - Best for distributed, **auto-scaling environments**.
+- **Pros**: 
+  - Scales easily, maintains **continuous compliance**.
+- **Cons**: 
+  - Requires agents to be installed on each system, making setup more complex.
+
 
 ---
 # What Is Terraform?
