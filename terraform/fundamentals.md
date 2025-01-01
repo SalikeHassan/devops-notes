@@ -126,3 +126,19 @@ Terraform checks the current state against your desired configuration. If no cha
 
 Terraform’s design ensures that infrastructure remains **consistent** and **idempotent**, making it reliable and efficient for managing **scalable cloud environments**.
 
+---
+# Quick Reference
+<img width="946" alt="image" src="https://github.com/user-attachments/assets/b7953b62-594c-4b80-8f47-b45909dc44d6" />
+
+<img width="1023" alt="image" src="https://github.com/user-attachments/assets/9e42e235-54a3-4605-b5b8-f51a3989173a" />
+
+
+
+
+
+
+
+
+
+
+
